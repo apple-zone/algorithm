@@ -4,6 +4,8 @@ const int N = 1e6 + 10;
 int n;
 int q[N];
 
+
+//下标不要随便变动，有边界问题
 void quick_sort(int *q, int l, int r)
 {
     if (l >= r)
