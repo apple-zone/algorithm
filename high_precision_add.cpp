@@ -26,17 +26,22 @@ vector<int> add(vector<int> &A, vector<int> &B)
     return C;
 }
 
+vector<int> sub(vector<int> &A, vector<int> &B)
+{
+    
+}
+
 int main()
 {
     string a, b;
     cin >> a >> b;
     vector<int> A, B;
-    for (int i = a.size()-1; i >= 0; --i)
+    for (int i = a.size() - 1; i >= 0; --i)
         A.push_back(a[i] - '0');
-    for (int i = b.size()-1; i >= 0; --i)
+    for (int i = b.size() - 1; i >= 0; --i)
         B.push_back(b[i] - '0');
     auto C = add(A, B);
     for (int i = C.size() - 1; i >= 0; --i)
-        printf("%d",C[i]);
+        printf("%d", C[i]);
     return 0;
 }
