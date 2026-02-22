@@ -34,7 +34,7 @@ void add(int des, int X)
 // 将下标des点后的节点删除
 void remove(int des)
 {
-        ne[des] = ne[ne[des]];
+    ne[des] = ne[ne[des]];
 }
 int main()
 {
@@ -54,12 +54,13 @@ int main()
             break;
         case 'D':
             cin >> des;
-            if(!des) head = ne[head];
-            remove(des-1);
+            if (!des)
+                head = ne[head];
+            remove(des - 1);
             break;
         default:
             cin >> des >> x;
-            add(des-1, x);
+            add(des - 1, x);
             break;
         }
     }
